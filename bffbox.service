@@ -1,0 +1,10 @@
+[Unit]
+Description=always play bff.fm through the headset
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/bffbox.sh
+
+[Install]
+WantedBy=default.target
